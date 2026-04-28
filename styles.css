@@ -22,12 +22,20 @@ body {
     border-radius: 10px;
 }
 
-@media screen {
-    container{
-
-
+@media (max-width: 480px) {
+    #pantalla {
+        font-size: 80px; 
+    }
+    
+    .interfaz {
+        width: 80%;
+        padding: 20px;
     }
 
+    button {
+        width: 100%; 
+        font-size: 18px;
+    }
 }
 
 .timer {
