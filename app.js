@@ -10,7 +10,7 @@ btn.addEventListener('click', () => {
 if (intervalo) clearInterval(intervalo);
 
 // reset
-let contador = 5;
+let contador = 60;
 pantalla.innerText = contador;
 btn.disabled = true;
 videoBoom.style.display = "none";
