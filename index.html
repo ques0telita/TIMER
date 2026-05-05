@@ -6,21 +6,22 @@
     <title>Timer</title>
     <link rel="stylesheet" href="styles.css"></link>
     <script src="app.js"></script>
-    <link rel="icon" href="/images/timer.png">
+    <link rel="icon" href="images/timer.png">
 </head>
 
 <body>
-    <video id="fondo-video" autoplay muted loop playsinline>
-    <source src="/images/rocket-vid.mp4" type="video/mp4">
-    </video>
+    <video id="fondo-video" autoplay muted loop src="images/rocket-vid.mp4" type="video/mp4"></video>
 
-    <video id="video-boom" src="/images/rocket-vid.mp4"></video>
+    <video id="video-boom" src="images/rocket-lunch.mp4" type="video/mp4"></video>
 
     <div class="container">
         <div class="timer">
-            <h1 id="pantalla">60</h1>
+            <div id="pantalla"><input type="number" class="input-number" id="number" value="10" min="1"></div>
         </div>
-        <button class="start" id="start-btn"">START</button>
+        <button id="start-btn">START</button>
     </div>
+     <a class="github" href="https://github.com/ques0telita/TIMER" target="_blank" >
+        <img src="images/GitHub_Invertocat_Black.png" alt="GitHub">
+    </a>
 </body>
 </html>
