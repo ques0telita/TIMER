@@ -33,8 +33,18 @@ if (contador > 0) {
 
     btn.disabled = false;
     btn.innerText = "RESET";
-    
+
+    videoBoom.onended = () => {
+    videoBoom.style.transition = "opacity 1s";
+    videoBoom.style.opacity = "0";
+    setTimeout(() => {
+        videoBoom.style.display = "none";
+        videoBoom.style.opacity = "1";
+        videoFondo.play();
+    }, 2000);
+};
 }
 }, 1000);
 });
 });
+
